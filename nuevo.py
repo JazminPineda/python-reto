@@ -102,26 +102,88 @@
 # else:
 #     print("Not leap year.") 
 
-S = 15
-M = 20
-L = 25
-bill = 0
-print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
-if size == "S":
-    bill = bill + S
-    if add_pepperoni == "Y":
-        bill += 2  
-elif size == "M":
-    bill += M
-    if add_pepperoni == "Y":
-        bill += 3 
+# S = 15
+# M = 20
+# L = 25
+# bill = 0
+# print("Welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want? S, M, or L ")
+# add_pepperoni = input("Do you want pepperoni? Y or N ")
+# extra_cheese = input("Do you want extra cheese? Y or N ")
+# if size == "S":
+#     bill = bill + S
+#     if add_pepperoni == "Y":
+#         bill += 2  
+# elif size == "M":
+#     bill += M
+#     if add_pepperoni == "Y":
+#         bill += 3 
+# else:
+#     bill += L
+#     if add_pepperoni == "Y":
+#             bill += 3
+# if extra_cheese =="Y":
+#     bill += 1
+# print(f"Your final bill is: ${bill}.")
+
+#Montaña RUSA
+
+# height=int(input("What is your height in cm? "))
+# bill = 0
+# print("You can ride the rollercoaster")
+# if height >= 120:
+#     age=int(input("What is your age "))
+#     foto=input("Do you want a photo token? Y or N ")
+#     if  age <= 12:
+#         bill += 5
+#     elif age >12 and age <=18:
+#         bill += 7
+#     elif age >= 19:
+#         if age >=45 and age <=55:
+#             bill += 0
+#             print("Everything's going to be ok. Have a free ride on us!")
+#         else:
+#             bill += 12
+        
+    
+#     if foto == "Y":
+#         bill += 3
+#     print(f"Your final bill is ${bill}")
+# else:
+#     print("Sorry, you have to grow taller before you can ride.") 
+
+## PROGRAMA CALCULADORA DEL AMOR Love Calculator!
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+names= (name1+name2).upper()
+resultado = 0
+resultado2 = 0
+puntaje1 ="TRUE"
+puntaje2 ="LOVE"
+
+for pos, char  in enumerate(puntaje1):
+    for pos1, char1 in enumerate(names):
+        if char1 == char:
+            resultado += 1
+for pos, char  in enumerate(puntaje2):
+    for pos1, char1 in enumerate(names):
+        if char1 == char:
+            resultado2 += 1   
+final= str(resultado) + str(resultado2)
+fin= int(final)
+if fin <= 10 or fin >=90:
+    print( f"Your score is {fin}, you go together like coke and mentos.")
+elif fin >= 40 and fin <= 50:
+    print(f"Your score is {fin}, you are alright together.")
 else:
-    bill += L
-    if add_pepperoni == "Y":
-            bill += 3
-if extra_cheese =="Y":
-    bill += 1
-print(f"Your final bill is: ${bill}.")
+    print(f"Your score is {fin}.")
+  
+
+    
+        
+    
+
+  
+
+
