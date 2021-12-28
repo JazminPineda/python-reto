@@ -26,8 +26,8 @@ for n in range(0, len(student_heights)):
 
 contador = 0
 sumar=0
-for n in range(0, len(student_heights)):
-   sumar = student_heights[n] + sumar
+for height in range(0, len(student_heights)):
+   sumar = student_heights[height] + sumar
    contador +=1
 promedio= round(sumar/contador)
  
