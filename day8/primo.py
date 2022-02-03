@@ -1,11 +1,13 @@
 import math
 
 def prime_checker(number):
-    if number/number == 1 and number/1== number:
-        print("It's a prime number.")
-        "finde"
+    for n in range(2, number):
+        if number % n == 0:
+            print("It's not a primer numer.")
+            return False
+        
     else:
-        print("It's not a prime number.")
+        print("It's a prime number")
 
 prime_checker(73)
 prime_checker(75)
